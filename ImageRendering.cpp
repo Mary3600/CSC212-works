@@ -26,8 +26,8 @@ int main(int argc, char* argv[])
     SDL_DestroySurface(surface4);
 
     SDL_FRect img1 = { 350, 130, 100, 100 }; //making a rectangle so the image sits in it instead of the whole screen
-    SDL_FRect img2 = { 250, 250, 100, 100 };
-    SDL_FRect img3 = { 450, 250, 100, 100 };
+    SDL_FRect img2 = { 230, 250, 100, 100 };
+    SDL_FRect img3 = { 470, 250, 100, 100 };
     SDL_FRect img4 = { 350, 370, 100, 100 };
 
     bool running = true;
