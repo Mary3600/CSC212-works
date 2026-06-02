@@ -35,7 +35,7 @@ int main() {
 	GLFWwindow* window = glfwCreateWindow(800, 800, "My First Window", NULL, NULL);  //creating a GLFWwindow object of 800(width) by 800(length) pixels, and naming it
 	if (window == NULL)
 	{
-		std::cout << "Failed t create GLFW window" << std::endl;  // error to check if the window fails to crete
+		std::cout << "Failed to create GLFW window" << std::endl;  // error to check if the window fails to crete
 		return -1;
 	}
 	glfwMakeContextCurrent(window);  // introduce the window to the current context

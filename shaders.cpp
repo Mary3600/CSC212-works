@@ -10,12 +10,12 @@
 
 GLfloat vertices[] =   // vertices coordinates
 {
-	-0.5f, -0.5f   * float(sqrt(3)) / 3, 0.0f,    0.27f, 0.51f, 0.70f,  // bottom left corner of triangle
-	0.5f,  -0.5f   * float(sqrt(3)) / 3, 0.0f,    0.27f, 0.51f, 0.70f,  // bottom right
-	0.0f,   0.5f   * float(sqrt(3)) * 2 / 3, 0.0f,    0.47f, 0.81f, 0.96f,   // top corner
-	-0.5f/2, 0.5f   * float(sqrt(3))  / 6, 0.0f,    0.37f, 0.66f, 0.85f,  // Inner left
-	0.5f/2,  0.5f   * float(sqrt(3))  / 6, 0.0f,    0.37f, 0.66f, 0.85f,  // Inner right
-	0.0f,  -0.5f   * float(sqrt(3))  / 3, 0.0f,    0.27f, 0.51f, 0.70f   // Inner down
+	-0.5f, -0.5f * float(sqrt(3)) / 3, 0.0f,    0.27f, 0.51f, 0.70f,  // bottom left corner of triangle
+	0.5f,  -0.5f * float(sqrt(3)) / 3, 0.0f,    0.27f, 0.51f, 0.70f,  // bottom right
+	0.0f,   0.5f * float(sqrt(3)) * 2 / 3, 0.0f,    0.47f, 0.81f, 0.96f,   // top corner
+	-0.25, 0.5f * float(sqrt(3)) / 6, 0.0f,    0.37f, 0.66f, 0.85f,  // Inner left
+	0.25f,  0.5f * float(sqrt(3)) / 6, 0.0f,    0.37f, 0.66f, 0.85f,  // Inner right
+	0.0f,  -0.5f * float(sqrt(3)) / 3, 0.0f,    0.27f, 0.51f, 0.70f   // Inner down
 };
 
 GLuint indices[] =
@@ -71,7 +71,7 @@ int main() {
 
 	// Gets ID of uniform called "scale"
 	GLuint uniID = glGetUniformLocation(shaderProgram.ID, "scale");
-	
+
 
 	glClearColor(0.0f, 0.1f, 0.0f, 1.0f);  //specify the background color
 	glClear(GL_COLOR_BUFFER_BIT);  // clean the back buffer with the front buffer
